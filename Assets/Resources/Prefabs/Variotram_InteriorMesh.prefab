@@ -3059,8 +3059,8 @@ GameObject:
   - component: {fileID: 8566474092687460270}
   - component: {fileID: 3672376339799374581}
   m_Layer: 0
-  m_Name: Variotram
-  m_TagString: Untagged
+  m_Name: Variotram_InteriorMesh
+  m_TagString: Tram
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3095,7 +3095,7 @@ Animator:
   m_GameObject: {fileID: 8566474092694762606}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 89356090fc10abc47a8dd3e75b871ed1, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1b71c6ddf9899294c8d757f8362f644f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

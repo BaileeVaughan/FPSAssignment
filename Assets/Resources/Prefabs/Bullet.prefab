@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4501729466543112947}
   - component: {fileID: 4501729466543112944}
   - component: {fileID: 4501729466543112945}
+  - component: {fileID: 4879486068251141832}
   - component: {fileID: 4466227561609058688}
   - component: {fileID: 2419283880351768508}
   m_Layer: 0
@@ -93,6 +94,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &4879486068251141832
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4501729466543112942}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.6706547
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4466227561609058688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,7 +120,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2419283880351768508}
-  speed: 10
+  speed: 3000
+  damage: 1
 --- !u!54 &2419283880351768508
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -1,43 +1,54 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerManager : MonoBehaviour
 {
     #region Variables
-    //Movement
-    public Vector3 moveDir;
+    [Header("Movement")]
+    private Vector3 moveDir;
     public CharacterController charC;
     public float jumpSpeed = 8f;
-    public float speed = 5f, gravity = 20f;
-    public static bool canMove;
-    //Shooting
-    public PlayerShoot pShoot;
-    //Mouse Look
+    public float speed = 10f, shiftSpeed = 15f, gravity = 20f;
+
+    [Header("Health")]
+    public Slider hpSlider;
+    public Image hpFill;
+    public float maxHP = 100f;
+    public float curHP = 0f;
+
+    [Header("Mouse Look")]
+    public bool canLook = false;
     public RotationalAxis axis = RotationalAxis.MouseX;
     public float sensitivity = 15f;
     public float minY = -60f;
     public float maxY = 60f;
     float rotationY = 0f;
-    //Interact
-    public GameObject player;
+
+    [Header("Interact")]
     public GameObject mainCamera;
+    public float playerReach = 1f;
     public bool isHolding = false;
     public int voteTotal = 0;
+
+    [Header("Script References")]
+    public PlayerShoot pShoot;
+    public Menus menus;
+    public EnemyManager enemy;
+
     #endregion
-    #region Start  
+    #region Start
     void Start()
     {
         //Movement
         charC = this.GetComponent<CharacterController>();
+        //Health
+        curHP = maxHP;
         //Mouse Look
         if (GetComponent<Rigidbody>())
         {
             GetComponent<Rigidbody>().freezeRotation = true;
         }
         //Interact
-        player = GameObject.FindGameObjectWithTag("Player");
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
     }
     #endregion
@@ -48,6 +59,11 @@ public class PlayerManager : MonoBehaviour
         if (charC.isGrounded)
         {
             moveDir = transform.TransformDirection(new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * speed);
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                moveDir = transform.TransformDirection(new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * shiftSpeed);
+            }
+
             if (Input.GetButton("Jump"))
             {
                 moveDir.y = jumpSpeed;
@@ -55,26 +71,31 @@ public class PlayerManager : MonoBehaviour
         }
         moveDir.y -= gravity * Time.deltaTime;
         charC.Move(moveDir * Time.deltaTime);
+        //Health
+        hpSlider.value = Mathf.Clamp01(curHP / maxHP);
         //Mouse Look
-        if (axis == RotationalAxis.MouseXandY)
+        if (canLook)
         {
-            float rotationX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * sensitivity;
-            rotationY += Input.GetAxis("Mouse Y") * sensitivity;
-            rotationY = Mathf.Clamp(rotationY, minY, maxY);
-            transform.localEulerAngles = new Vector3(-rotationY, rotationX, 0);
-        }
-        else if (axis == RotationalAxis.MouseX)
-        {
-            transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivity, 0);
-        }
-        else
-        {
-            rotationY += Input.GetAxis("Mouse Y") * sensitivity;
-            rotationY = Mathf.Clamp(rotationY, minY, maxY);
-            transform.localEulerAngles = new Vector3(-rotationY, 0, 0);
+            if (axis == RotationalAxis.MouseXandY)
+            {
+                float rotationX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * sensitivity;
+                rotationY += Input.GetAxis("Mouse Y") * sensitivity;
+                rotationY = Mathf.Clamp(rotationY, minY, maxY);
+                transform.localEulerAngles = new Vector3(-rotationY, rotationX, 0);
+            }
+            else if (axis == RotationalAxis.MouseX)
+            {
+                transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivity, 0);
+            }
+            else
+            {
+                rotationY += Input.GetAxis("Mouse Y") * sensitivity;
+                rotationY = Mathf.Clamp(rotationY, minY, maxY);
+                transform.localEulerAngles = new Vector3(-rotationY, 0, 0);
+            }
         }
         //Shoot
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButton("Fire1"))
         {
             pShoot.Shoot();
         }
@@ -84,7 +105,7 @@ public class PlayerManager : MonoBehaviour
             Ray interact;
             interact = Camera.main.ScreenPointToRay(new Vector2(Screen.width / 2, Screen.height / 2));
             RaycastHit hitInfo;
-            if (Physics.Raycast(interact, out hitInfo, 10))
+            if (Physics.Raycast(interact, out hitInfo, playerReach))
             {
                 if (hitInfo.collider.CompareTag("Collectable"))
                 {
@@ -112,6 +133,20 @@ public class PlayerManager : MonoBehaviour
                     }
                 }
             }
+        }
+        //Pause
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            menus.OpenPauseMenu();
+        }
+    }
+    #endregion
+    #region TakeDamage
+    public void OnTriggerStay(Collider col)
+    {
+        if (col.CompareTag("Enemy"))
+        {
+            curHP -= col.GetComponent<EnemyManager>().damage;
         }
     }
     #endregion

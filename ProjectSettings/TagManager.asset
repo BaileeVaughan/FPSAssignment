@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Collectable
   - Depositor
+  - Enemy
+  - Target
+  - Tram
   layers:
   - Default
   - TransparentFX

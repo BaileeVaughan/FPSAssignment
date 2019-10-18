@@ -7,14 +7,23 @@ public class PlayerShoot : MonoBehaviour
 
     public float shootRate = 1f;
     public float shootFactor = 0f;
+    public bool canShoot = false;
+
+
+    public void Update()
+    {
+        shootFactor += Time.deltaTime;
+    }
 
     public void Shoot()
     {
-        shootFactor += Time.deltaTime;
-        if (shootFactor >= shootRate)
+        if (canShoot)
         {
-            Instantiate(bulletPrefab, shotOrigin.position, shotOrigin.rotation);
-            shootFactor = 0;
+            if (shootFactor >= shootRate)
+            {
+                Instantiate(bulletPrefab, shotOrigin.position, shotOrigin.rotation);
+                shootFactor = 0;
+            }
         }
     }
 }
