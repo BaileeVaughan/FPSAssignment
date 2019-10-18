@@ -19,14 +19,10 @@ public class EnemyManager : MonoBehaviour
     public float maxHP = 10f;
     public float curHP = 0f;
 
-    private void Awake()
+    private void Start()
     {
         //Movement
         target = GameObject.FindGameObjectWithTag("Target");
-    }
-
-    private void Start()
-    {
         nav = GetComponent<NavMeshAgent>();
         nav.SetDestination(target.transform.position);
         //Health

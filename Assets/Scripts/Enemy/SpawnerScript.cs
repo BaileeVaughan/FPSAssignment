@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnerScript : MonoBehaviour
 {
-    public GameObject[] prefabs;
+    public GameObject prefab;
     public float spawnRate = 1f;
     public float spawnFactor = 0f;
 
@@ -13,8 +13,7 @@ public class SpawnerScript : MonoBehaviour
         spawnFactor += Time.deltaTime;
         if (spawnFactor >= spawnRate)
         {
-            int randomIndex = Random.Range(0, prefabs.Length);
-            Spawn(prefabs[randomIndex]);
+            Spawn(prefab);
             spawnFactor = 0;
         }
     }

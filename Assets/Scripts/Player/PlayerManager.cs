@@ -26,8 +26,9 @@ public class PlayerManager : MonoBehaviour
 
     [Header("Interact")]
     public GameObject mainCamera;
-    public float playerReach = 1f;
     public bool isHolding = false;
+    public float playerReach = 1f;
+    public Text totalItem, holdingItem;
     public int voteTotal = 0;
 
     [Header("Script References")]
@@ -36,22 +37,28 @@ public class PlayerManager : MonoBehaviour
     public EnemyManager enemy;
 
     #endregion
+
     #region Start
     void Start()
     {
         //Movement
         charC = this.GetComponent<CharacterController>();
+
         //Health
         curHP = maxHP;
+
         //Mouse Look
         if (GetComponent<Rigidbody>())
         {
             GetComponent<Rigidbody>().freezeRotation = true;
         }
+
         //Interact
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+        holdingItem.text = "Collect votes to beat the Liberals!";
     }
     #endregion
+
     #region Update
     void Update()
     {
@@ -71,8 +78,10 @@ public class PlayerManager : MonoBehaviour
         }
         moveDir.y -= gravity * Time.deltaTime;
         charC.Move(moveDir * Time.deltaTime);
+
         //Health
         hpSlider.value = Mathf.Clamp01(curHP / maxHP);
+
         //Mouse Look
         if (canLook)
         {
@@ -94,12 +103,23 @@ public class PlayerManager : MonoBehaviour
                 transform.localEulerAngles = new Vector3(-rotationY, 0, 0);
             }
         }
+
         //Shoot
         if (Input.GetButton("Fire1"))
         {
             pShoot.Shoot();
         }
+
         //Interact
+        if (voteTotal == 1)
+        {
+            totalItem.text = voteTotal.ToString() + " vote!";
+        }
+        else
+        {
+            totalItem.text = voteTotal.ToString() + " votes!";
+        }
+
         if (Input.GetButtonDown("Interact"))
         {
             Ray interact;
@@ -111,12 +131,12 @@ public class PlayerManager : MonoBehaviour
                 {
                     if (isHolding == false)
                     {
-                        Debug.Log("Vote Collected!");
                         isHolding = true;
+                        holdingItem.text = "Holding a Vote!";
                     }
                     else
                     {
-                        Debug.Log("Already holding vote!");
+                        holdingItem.text = "Hurry! Go submit the vote!";
                     }
                 }
                 if (hitInfo.collider.CompareTag("Depositor"))
@@ -124,16 +144,17 @@ public class PlayerManager : MonoBehaviour
                     if (isHolding == true)
                     {
                         isHolding = false;
-                        Debug.Log("Vote Deposited!");
+                        holdingItem.text = "Vote submitted! Go collect another vote!";
                         voteTotal++;
                     }
                     else
                     {
-                        Debug.Log("Go collect a vote!");
+                        holdingItem.text = "Quick! Go collect a vote!";
                     }
                 }
             }
         }
+
         //Pause
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -141,6 +162,7 @@ public class PlayerManager : MonoBehaviour
         }
     }
     #endregion
+
     #region TakeDamage
     public void OnTriggerStay(Collider col)
     {
