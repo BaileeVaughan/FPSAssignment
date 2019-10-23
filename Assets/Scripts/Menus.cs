@@ -62,6 +62,8 @@ public class Menus : MonoBehaviour
 
     #region Options
     public bool isFullscreen;
+    public float mouseSensitivity;
+    public PlayerManager player;
 
     public void SetFullscreen()
     {
@@ -72,6 +74,11 @@ public class Menus : MonoBehaviour
     public void SetMasterVolume(float value)
     {
         //AudioManager.instance.SetVolume(value, AudioManager.AudioChannel.Master);
+    }
+
+    public void SetSensitivity(float value)
+    {
+        player.sensitivity = value;
     }
     #endregion
 }

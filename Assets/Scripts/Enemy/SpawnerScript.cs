@@ -20,7 +20,6 @@ public class SpawnerScript : MonoBehaviour
 
     void Spawn(GameObject gO)
     {
-        GameObject spawnedObject = Instantiate(gO);
-        spawnedObject.transform.position = transform.position;
+        Instantiate(gO, transform.position, Quaternion.identity);
     }
 }

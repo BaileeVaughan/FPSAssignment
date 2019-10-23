@@ -120,40 +120,49 @@ public class PlayerManager : MonoBehaviour
             totalItem.text = voteTotal.ToString() + " votes!";
         }
 
-        if (Input.GetButtonDown("Interact"))
+        if (voteTotal >= 4)
         {
-            Ray interact;
-            interact = Camera.main.ScreenPointToRay(new Vector2(Screen.width / 2, Screen.height / 2));
-            RaycastHit hitInfo;
-            if (Physics.Raycast(interact, out hitInfo, playerReach))
+            holdingItem.text = "You won the battle!";
+        }
+        else
+        {
+            if (Input.GetButtonDown("Interact"))
             {
-                if (hitInfo.collider.CompareTag("Collectable"))
+                Ray interact;
+                interact = Camera.main.ScreenPointToRay(new Vector2(Screen.width / 2, Screen.height / 2));
+                RaycastHit hitInfo;
+                if (Physics.Raycast(interact, out hitInfo, playerReach))
                 {
-                    if (isHolding == false)
+                    if (hitInfo.collider.CompareTag("Collectable"))
                     {
-                        isHolding = true;
-                        holdingItem.text = "Holding a Vote!";
+                        if (isHolding == false)
+                        {
+                            isHolding = true;
+                            Destroy(hitInfo.collider.gameObject);
+                            holdingItem.text = "Holding a Vote!";
+                        }
+                        else
+                        {
+                            holdingItem.text = "Hurry! Go submit the vote!";
+                        }
                     }
-                    else
+
+                    if (hitInfo.collider.CompareTag("Depositor"))
                     {
-                        holdingItem.text = "Hurry! Go submit the vote!";
-                    }
-                }
-                if (hitInfo.collider.CompareTag("Depositor"))
-                {
-                    if (isHolding == true)
-                    {
-                        isHolding = false;
-                        holdingItem.text = "Vote submitted! Go collect another vote!";
-                        voteTotal++;
-                    }
-                    else
-                    {
-                        holdingItem.text = "Quick! Go collect a vote!";
+                        if (isHolding == true)
+                        {
+                            isHolding = false;
+                            holdingItem.text = "Vote submitted! Go collect another vote!";
+                            voteTotal++;
+                        }
+                        else
+                        {
+                            holdingItem.text = "Quick! Go collect a vote!";
+                        }
                     }
                 }
             }
-        }
+        }       
 
         //Pause
         if (Input.GetKeyDown(KeyCode.Escape))

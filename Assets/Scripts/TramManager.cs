@@ -4,11 +4,11 @@ using UnityEngine.UI;
 public class TramManager : MonoBehaviour
 {
     [Header("Health")]
+    public Canvas tramUI;
     public Slider hpSlider;
     public Image hpFill;
     public float maxHP = 500f;
     public float curHP = 0f;
-    public Canvas tramUI;
 
     private void Start()
     {
@@ -22,6 +22,14 @@ public class TramManager : MonoBehaviour
         if (curHP <= 0)
         {
             Destroy(gameObject);
+        }
+    }
+
+    public void OnTriggerStay(Collider col)
+    {
+        if (col.CompareTag("Enemy"))
+        {
+            curHP -= col.GetComponent<EnemyManager>().damage * 1.5f;
         }
     }
 }
