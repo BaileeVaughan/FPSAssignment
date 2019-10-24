@@ -31,10 +31,15 @@ public class PlayerManager : MonoBehaviour
     public Text totalItem, holdingItem;
     public int voteTotal = 0;
 
+    [Header("Shoot")]
+    public GameObject gun2;
+    public bool lastResort = false;
+
     [Header("Script References")]
     public PlayerShoot pShoot;
     public Menus menus;
     public EnemyManager enemy;
+    public SpawnerScript[] spawn;
 
     #endregion
 
@@ -55,7 +60,9 @@ public class PlayerManager : MonoBehaviour
 
         //Interact
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
-        holdingItem.text = "Collect votes to beat the Liberals!";
+        holdingItem.text = "Go find a vote and press 'E' to collect it!";
+
+        lastResort = false;
     }
     #endregion
 
@@ -105,9 +112,21 @@ public class PlayerManager : MonoBehaviour
         }
 
         //Shoot
-        if (Input.GetButton("Fire1"))
+        if (lastResort)
         {
-            pShoot.Shoot();
+            gun2.SetActive(true);
+            if (Input.GetButton("Fire1"))
+            {
+                pShoot.LastResort();
+            }
+        }
+        else
+        {
+            gun2.SetActive(false);
+            if (Input.GetButton("Fire1"))
+            {
+                pShoot.Shoot();
+            }
         }
 
         //Interact
@@ -122,7 +141,13 @@ public class PlayerManager : MonoBehaviour
 
         if (voteTotal >= 4)
         {
-            holdingItem.text = "You won the battle!";
+            holdingItem.text = "Oh no the Liberals are mad! Defend the trams!";
+            lastResort = true;
+            spawn[0].spawnRate = 1.5f;
+            spawn[1].spawnRate = 1.5f;
+            spawn[2].spawnRate = 1.5f;
+            spawn[3].spawnRate = 1.5f;
+            spawn[4].isBoss = true;
         }
         else
         {
