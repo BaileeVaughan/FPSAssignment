@@ -383,6 +383,7 @@ MonoBehaviour:
   target: {fileID: 0}
   enemySpeed: 8
   enemyUI: {fileID: 8322557566964881610}
+  isBoss: 0
   damage: 1
   hpSlider: {fileID: 7660223423892911606}
   hpFill: {fileID: 8549016215924379434}

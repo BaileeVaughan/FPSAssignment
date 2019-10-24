@@ -58,11 +58,15 @@ public class PlayerManager : MonoBehaviour
             GetComponent<Rigidbody>().freezeRotation = true;
         }
 
+        //Shoot
+        lastResort = false;
+
         //Interact
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
         holdingItem.text = "Go find a vote and press 'E' to collect it!";
 
-        lastResort = false;
+        //References
+        spawn = FindObjectsOfType<SpawnerScript>();
     }
     #endregion
 
@@ -143,11 +147,11 @@ public class PlayerManager : MonoBehaviour
         {
             holdingItem.text = "Oh no the Liberals are mad! Defend the trams!";
             lastResort = true;
-            spawn[0].spawnRate = 1.5f;
-            spawn[1].spawnRate = 1.5f;
-            spawn[2].spawnRate = 1.5f;
-            spawn[3].spawnRate = 1.5f;
-            spawn[4].isBoss = true;
+            spawn[0].activateBoss = true;
+            spawn[1].spawnRate = 2;
+            spawn[2].activateBoss = true;
+            spawn[3].spawnRate = 2;
+            spawn[4].activateBoss = true;
         }
         else
         {
@@ -164,11 +168,11 @@ public class PlayerManager : MonoBehaviour
                         {
                             isHolding = true;
                             Destroy(hitInfo.collider.gameObject);
-                            holdingItem.text = "Holding a Vote!";
+                            holdingItem.text = "Holding a Vote! Go submit it to the ballot box!";
                         }
                         else
                         {
-                            holdingItem.text = "Hurry! Go submit the vote!";
+                            holdingItem.text = "Hurry! Go submit the vote to the ballot box!";
                         }
                     }
 
@@ -187,7 +191,7 @@ public class PlayerManager : MonoBehaviour
                     }
                 }
             }
-        }       
+        }
 
         //Pause
         if (Input.GetKeyDown(KeyCode.Escape))

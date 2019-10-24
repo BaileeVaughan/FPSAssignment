@@ -102,7 +102,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2074514097}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.581002, y: 0.00000018253341, z: -0.0000051480583}
+  m_LocalPosition: {x: 0.502, y: -0, z: 1.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1689230395}
@@ -236,15 +236,12 @@ MonoBehaviour:
   totalItem: {fileID: 0}
   holdingItem: {fileID: 0}
   voteTotal: 3
+  gun2: {fileID: 0}
   lastResort: 0
   pShoot: {fileID: 1914552140129144435}
   menus: {fileID: 0}
   enemy: {fileID: 0}
-  spawn:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  spawn: {fileID: 0}
 --- !u!114 &1914552140129144435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,7 +260,7 @@ MonoBehaviour:
   shotOrigin:
   - {fileID: 2329146128037713559}
   - {fileID: 2074514098}
-  shootRate: 0.000001
+  shootRate: 0.01
   shootFactor: 0
   canShoot: 0
 --- !u!143 &7030197270284674823
@@ -487,10 +484,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7775054247170594719}
-  m_LocalRotation: {x: -2.3283059e-10, y: 0.6889474, z: 8.585628e-10, w: 0.7248114}
+  m_LocalRotation: {x: 0, y: 0.6883546, z: 0, w: 0.72537434}
   m_LocalPosition: {x: 0.58100176, y: 0.0000000022421018, z: -0.000005452789}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7356185906703422289}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 87.094, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 87, z: 0}

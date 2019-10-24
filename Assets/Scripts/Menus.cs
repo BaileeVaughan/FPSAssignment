@@ -20,6 +20,7 @@ public class Menus : MonoBehaviour
         pauseScreen.SetActive(false);
         playerUI.SetActive(false);
         isFullscreen = false;
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     public void PauseGame()
@@ -36,6 +37,7 @@ public class Menus : MonoBehaviour
         playerShoot.canShoot = false;
         pauseScreen.SetActive(true);
         playerUI.SetActive(false);
+        Cursor.lockState = CursorLockMode.Confined;
     }
     
     public void ResumeGame()
@@ -47,6 +49,7 @@ public class Menus : MonoBehaviour
         playerShoot.canShoot = true;
         pauseScreen.SetActive(false);
         playerUI.SetActive(true);
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     public void QuitGame()

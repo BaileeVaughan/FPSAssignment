@@ -7,22 +7,22 @@ public class SpawnerScript : MonoBehaviour
     public GameObject[] prefab;
     public float spawnRate = 1f;
     public float spawnFactor = 0f;
-    public bool isBoss = false;
+    public bool activateBoss = false;
 
     private void Start()
     {
-        isBoss = false;
+        activateBoss = false;
     }
 
     void Update()
     {        
-        if (isBoss)
+        if (activateBoss)
         {
             spawnFactor += Time.deltaTime;
             if (spawnFactor >= spawnRate)
             {
                 SpawnBoss(prefab[1]);
-                spawnRate = 10000000000000000000;
+                Destroy(gameObject);
             }
         }
         else
