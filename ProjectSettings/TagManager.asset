@@ -9,7 +9,6 @@ TagManager:
   - Enemy
   - Target
   - Tram
-  - Boss
   layers:
   - Default
   - TransparentFX

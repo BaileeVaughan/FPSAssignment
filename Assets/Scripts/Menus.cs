@@ -9,6 +9,7 @@ public class Menus : MonoBehaviour
 
     public GameObject pauseScreen;
     public GameObject playerUI;
+    public GameObject deathUI;
 
     public void Start()
     {
@@ -19,8 +20,24 @@ public class Menus : MonoBehaviour
         playerShoot.canShoot = false;
         pauseScreen.SetActive(false);
         playerUI.SetActive(false);
+        deathUI.SetActive(false);
         isFullscreen = false;
         Cursor.lockState = CursorLockMode.Confined;
+    }
+
+    private void Update()
+    {
+        if (player.curHP <= 0)
+        {
+            PauseGame();
+            playerShoot.canShoot = false;
+            playerUI.SetActive(false);
+            playerManager.canLook = false;
+            mouseLook.canLook = false;
+            deathUI.SetActive(true);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.Confined;
+        }
     }
 
     public void PauseGame()
@@ -56,7 +73,7 @@ public class Menus : MonoBehaviour
     {
         Debug.Log("GameExit");
         Application.Quit();
-    }
+    }    
 
     public void ReloadGame()
     {
@@ -65,7 +82,6 @@ public class Menus : MonoBehaviour
 
     #region Options
     public bool isFullscreen;
-    public float mouseSensitivity;
     public PlayerManager player;
 
     public void SetFullscreen()
@@ -77,11 +93,6 @@ public class Menus : MonoBehaviour
     public void SetMasterVolume(float value)
     {
         //AudioManager.instance.SetVolume(value, AudioManager.AudioChannel.Master);
-    }
-
-    public void SetSensitivity(float value)
-    {
-        player.sensitivity = value;
     }
     #endregion
 }

@@ -13,7 +13,7 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        if (col.CompareTag("Enemy") || col.CompareTag("Boss"))
+        if (col.CompareTag("Enemy"))
         {
             col.GetComponent<EnemyManager>().curHP -= damage;
             Destroy(gameObject);
