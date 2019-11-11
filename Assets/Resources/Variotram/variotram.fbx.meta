@@ -1,0 +1,1405 @@
+fileFormatVersion: 2
+guid: 1cdd486c7af7d2d4a8f8a17c3a0743b7
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: air_con
+    100002: air_con 1
+    100004: air_con 2
+    100006: air_con 3
+    100008: air_con_detail
+    100010: air_con_detail 1
+    100012: air_con_reference
+    100014: air_con_reference 1
+    100016: aux_converter
+    100018: aux_converter 1
+    100020: aux_converter_detail
+    100022: aux_converter_reference
+    100024: batterybox
+    100026: body_exterior
+    100028: body_exterior 1
+    100030: body_exterior 2
+    100032: body_exterior 3
+    100034: body_exterior 4
+    100036: body_exterior 5
+    100038: body_exterior 6
+    100040: body_shell
+    100042: body_shell 1
+    100044: bogie_frame_lowpoly1
+    100046: bogie_frame_lowpoly1 1
+    100048: bogie_frame_lowpoly2
+    100050: bogie_skirt_left
+    100052: bogie_skirt_left 1
+    100054: bogie_skirt_left 2
+    100056: bogie_skirt_right
+    100058: bogie_skirt_right 1
+    100060: bogie_skirt_right 2
+    100062: bogies1
+    100064: bogies_detailed_trailer
+    100066: bogies_lowpoly
+    100068: bogies_lowpoly 1
+    100070: bogiesdetailed
+    100072: bogiesdetailed 1
+    100074: braked_axle_motor
+    100076: braked_axle_motor 1
+    100078: brakes
+    100080: brakes 1
+    100082: brakes3
+    100084: brakes4
+    100086: cab1
+    100088: cab1 1
+    100090: cabwall
+    100092: cabwall 1
+    100094: columnretainer
+    100096: columnretainer 1
+    100098: columnretainer 2
+    100100: columnretainer 3
+    100102: columnretainer 4
+    100104: columnretainer 5
+    100106: columnretainer 6
+    100108: columnretainer 7
+    100110: columnretainer 8
+    100112: columnretainer 9
+    100114: columnretainer1
+    100116: columnretainer1 1
+    100118: couplercover
+    100120: couplercover 1
+    100122: distanceDimension1
+    100124: distanceDimension2
+    100126: distanceDimension2 1
+    100128: door_rotating_column_L
+    100130: door_rotating_column_L 1
+    100132: door_rotating_column_L 2
+    100134: door_rotating_column_L 3
+    100136: door_rotating_column_L 4
+    100138: door_rotating_column_L 5
+    100140: door_rotating_column_L 6
+    100142: door_rotating_column_L 7
+    100144: door_rotating_column_L 8
+    100146: door_rotating_column_L 9
+    100148: door_rotating_column_L1
+    100150: door_rotating_column_L1 1
+    100152: doordetails_temp_
+    100154: doordetails_temp_ 1
+    100156: doordetails_temp_ 2
+    100158: doordetails_temp_ 3
+    100160: doordetails_temp_ 4
+    100162: doordetails_temp_ 5
+    100164: doordetails_temp_ 6
+    100166: doordetails_temp_ 7
+    100168: doordetails_temp_ 8
+    100170: doordetails_temp_ 9
+    100172: doordetails_temp_1
+    100174: doordetails_temp_1 1
+    100176: doorleft
+    100178: doorleft 1
+    100180: doorleft1
+    100182: doorleft1 1
+    100184: doorleft3
+    100186: doorleft3 1
+    100188: doorleft5
+    100190: doorleft5 1
+    100192: doormotor
+    100194: doormotor 1
+    100196: doormotorcover
+    100198: doormotorcover 1
+    100200: doormotorcover1
+    100202: doormotorcover1 1
+    100204: doormotorcover2
+    100206: doormotorcover2 1
+    100208: doorrightL
+    100210: doorrightL 1
+    100212: doorrightR
+    100214: doorrightR 1
+    100216: doors
+    100218: doors 1
+    100220: doors_left
+    100222: doors_left 1
+    100224: doors_right
+    100226: doors_right 1
+    100228: egg_spring
+    100230: egg_spring 1
+    100232: egg_spring 2
+    100234: front_ref
+    100236: front_ref 1
+    100238: group4
+    100240: group4 1
+    100242: group6
+    100244: hingelower2
+    100246: hingelower2 1
+    100248: hingelower3
+    100250: hingelower3 1
+    100252: hingelower4
+    100254: hingelower4 1
+    100256: ikHandle1
+    100258: ikHandle1 1
+    100260: ikHandle2
+    100262: ikHandle2 1
+    100264: ikHandle3
+    100266: ikHandle3 1
+    100268: ikHandle4
+    100270: ikHandle4 1
+    100272: ikHandle5
+    100274: ikHandle5 1
+    100276: ikHandle6
+    100278: ikHandle6 1
+    100280: imagePlane10
+    100282: imagePlane10 1
+    100284: imagePlane14
+    100286: imagePlane14 1
+    100288: imagePlane15
+    100290: imagePlane15 1
+    100292: imagePlane16
+    100294: imagePlane16 1
+    100296: imagePlane17
+    100298: imagePlane17 1
+    100300: imagePlane18
+    100302: imagePlane18 1
+    100304: imagePlane19
+    100306: imagePlane19 1
+    100308: imagePlane2
+    100310: imagePlane2 1
+    100312: imagePlane3
+    100314: imagePlane3 1
+    100316: imagePlane4
+    100318: imagePlane4 1
+    100320: imagePlane5
+    100322: imagePlane6
+    100324: imagePlane7
+    100326: imagePlane8
+    100328: imagePlane8 1
+    100330: imagePlane9
+    100332: imagePlane9 1
+    100334: interior
+    100336: interior 1
+    100338: interior 2
+    100340: interior 3
+    100342: interior 4
+    100344: interior_walls
+    100346: joint10
+    100348: joint10 1
+    100350: joint11
+    100352: joint11 1
+    100354: joint13
+    100356: joint13 1
+    100358: joint13 2
+    100360: joint13 3
+    100362: joint13 4
+    100364: joint13 5
+    100366: joint14
+    100368: joint14 1
+    100370: joint14 2
+    100372: joint14 3
+    100374: joint14 4
+    100376: joint14 5
+    100378: joint16
+    100380: joint16 1
+    100382: joint16 2
+    100384: joint16 3
+    100386: joint16 4
+    100388: joint16 5
+    100390: joint18
+    100392: joint18 1
+    100394: joint18 2
+    100396: joint18 3
+    100398: joint18 4
+    100400: joint18 5
+    100402: joint19
+    100404: joint19 1
+    100406: joint19 2
+    100408: joint19 3
+    100410: joint19 4
+    100412: joint19 5
+    100414: joint21
+    100416: joint21 1
+    100418: joint21 2
+    100420: joint21 3
+    100422: joint21 4
+    100424: joint21 5
+    100426: joint7
+    100428: joint7 1
+    100430: joint8
+    100432: joint8 1
+    100434: joint9
+    100436: joint9 1
+    100438: joints
+    100440: junction_box
+    100442: junction_box 1
+    100444: L
+    100446: L 1
+    100448: L 2
+    100450: L 3
+    100452: L 4
+    100454: L 5
+    100456: locator1
+    100458: locator10
+    100460: locator10 1
+    100462: locator11
+    100464: locator11 1
+    100466: locator2
+    100468: locator3
+    100470: locator3 1
+    100472: locator4
+    100474: locator4 1
+    100476: m3pole3
+    100478: m3pole4
+    100480: module_1
+    100482: module_1_interior_interior_walls
+    100484: module_1_interior_interior_walls 1
+    100486: module_2
+    100488: module_2_4_interior_walls
+    100490: module_2_4_interior_walls 1
+    100492: module_2_interior_poles1
+    100494: module_3
+    100496: module_4
+    100498: module_5
+    100500: motor
+    100502: motor 1
+    100504: pantobox
+    100506: pCube54
+    100508: pCube55
+    100510: pCube56
+    100512: pCube93
+    100514: pCube93 1
+    100516: pCube95
+    100518: pCylinder2
+    100520: pCylinder2 1
+    100522: pCylinder3
+    100524: pCylinder3 1
+    100526: poles
+    100528: poles 1
+    100530: poles1
+    100532: poles2
+    100534: poles2 1
+    100536: polySurface20
+    100538: polySurface20 1
+    100540: push_L
+    100542: push_L 1
+    100544: pushpole_L
+    100546: pushpole_L 1
+    100548: pushpole_R
+    100550: pushpole_R 1
+    100552: R
+    100554: R 1
+    100556: R 2
+    100558: R 3
+    100560: R 4
+    100562: R 5
+    100564: roof
+    100566: roof_components
+    100568: roof_components 1
+    100570: roof_skirt1
+    100572: roof_skirt1 1
+    100574: roof_skirt1 2
+    100576: roof_skirt2
+    100578: roof_skirt2 1
+    100580: roof_skirt2 2
+    100582: roof_skirt_1
+    100584: roof_skirt_1 1
+    100586: roof_skirt_2
+    100588: roof_skirt_2 1
+    100590: seatblock10
+    100592: seatblock10 1
+    100594: seatblock11
+    100596: seatblock11 1
+    100598: seatblock12
+    100600: seatblock12 1
+    100602: seatblock13
+    100604: seatblock14
+    100606: seatblock15
+    100608: seatblock16
+    100610: seatblockpair
+    100612: seatblockpair 1
+    100614: seats
+    100616: seats 1
+    100618: seats 2
+    100620: seats 3
+    100622: seats 4
+    100624: seats_facing
+    100626: seats_facing 1
+    100628: seats_facing1
+    100630: seats_facing1 1
+    100632: seats_facing2
+    100634: seats_facing2 1
+    100636: secondary_frame_1
+    100638: secondary_frame_1 1
+    100640: secondary_frame_1 2
+    100642: secondary_frame_2
+    100644: secondary_frame_2 1
+    100646: secondary_frame_2 2
+    100648: secondary_rod_L
+    100650: secondary_rod_L 1
+    100652: secondary_rod_R1
+    100654: secondary_rod_R1 1
+    100656: secondary_rod_R1 2
+    100658: secondary_rod_R1 3
+    100660: secondary_rod_R1 4
+    100662: secondary_rod_R1 5
+    100664: secondary_rod_R1 6
+    100666: secondary_rod_R1 7
+    100668: secondary_rod_R1 8
+    100670: secondary_rod_R1 9
+    100672: secondary_rodL
+    100674: secondary_rodL 1
+    100676: secondary_rodL 2
+    100678: secondary_rodL 3
+    100680: secondary_rodL1
+    100682: secondary_rodL1 1
+    100684: secondary_rodR
+    100686: secondary_rodR 1
+    100688: secondary_rodR 2
+    100690: secondary_rodR 3
+    100692: secondary_rodR1
+    100694: secondary_rodR1 1
+    100696: shell_mod_3
+    100698: sidebumperref
+    100700: sidebumperref 1
+    100702: traction_converter
+    100704: traction_converter 1
+    100706: traction_converter 2
+    100708: traction_converter 3
+    100710: traction_converter_detail
+    100712: traction_converter_detail 1
+    100714: traction_converter_supportstuff
+    100716: traction_converter_supportstuff 1
+    100718: trailer_axles
+    100720: unbraked_axle_motor
+    100722: unbraked_axle_motor 1
+    100724: undercarriageM1
+    100726: undercarriageM1 1
+    100728: undercarriageM3
+    100730: //RootNode
+    400000: air_con
+    400002: air_con 1
+    400004: air_con 2
+    400006: air_con 3
+    400008: air_con_detail
+    400010: air_con_detail 1
+    400012: air_con_reference
+    400014: air_con_reference 1
+    400016: aux_converter
+    400018: aux_converter 1
+    400020: aux_converter_detail
+    400022: aux_converter_reference
+    400024: batterybox
+    400026: body_exterior
+    400028: body_exterior 1
+    400030: body_exterior 2
+    400032: body_exterior 3
+    400034: body_exterior 4
+    400036: body_exterior 5
+    400038: body_exterior 6
+    400040: body_shell
+    400042: body_shell 1
+    400044: bogie_frame_lowpoly1
+    400046: bogie_frame_lowpoly1 1
+    400048: bogie_frame_lowpoly2
+    400050: bogie_skirt_left
+    400052: bogie_skirt_left 1
+    400054: bogie_skirt_left 2
+    400056: bogie_skirt_right
+    400058: bogie_skirt_right 1
+    400060: bogie_skirt_right 2
+    400062: bogies1
+    400064: bogies_detailed_trailer
+    400066: bogies_lowpoly
+    400068: bogies_lowpoly 1
+    400070: bogiesdetailed
+    400072: bogiesdetailed 1
+    400074: braked_axle_motor
+    400076: braked_axle_motor 1
+    400078: brakes
+    400080: brakes 1
+    400082: brakes3
+    400084: brakes4
+    400086: cab1
+    400088: cab1 1
+    400090: cabwall
+    400092: cabwall 1
+    400094: columnretainer
+    400096: columnretainer 1
+    400098: columnretainer 2
+    400100: columnretainer 3
+    400102: columnretainer 4
+    400104: columnretainer 5
+    400106: columnretainer 6
+    400108: columnretainer 7
+    400110: columnretainer 8
+    400112: columnretainer 9
+    400114: columnretainer1
+    400116: columnretainer1 1
+    400118: couplercover
+    400120: couplercover 1
+    400122: distanceDimension1
+    400124: distanceDimension2
+    400126: distanceDimension2 1
+    400128: door_rotating_column_L
+    400130: door_rotating_column_L 1
+    400132: door_rotating_column_L 2
+    400134: door_rotating_column_L 3
+    400136: door_rotating_column_L 4
+    400138: door_rotating_column_L 5
+    400140: door_rotating_column_L 6
+    400142: door_rotating_column_L 7
+    400144: door_rotating_column_L 8
+    400146: door_rotating_column_L 9
+    400148: door_rotating_column_L1
+    400150: door_rotating_column_L1 1
+    400152: doordetails_temp_
+    400154: doordetails_temp_ 1
+    400156: doordetails_temp_ 2
+    400158: doordetails_temp_ 3
+    400160: doordetails_temp_ 4
+    400162: doordetails_temp_ 5
+    400164: doordetails_temp_ 6
+    400166: doordetails_temp_ 7
+    400168: doordetails_temp_ 8
+    400170: doordetails_temp_ 9
+    400172: doordetails_temp_1
+    400174: doordetails_temp_1 1
+    400176: doorleft
+    400178: doorleft 1
+    400180: doorleft1
+    400182: doorleft1 1
+    400184: doorleft3
+    400186: doorleft3 1
+    400188: doorleft5
+    400190: doorleft5 1
+    400192: doormotor
+    400194: doormotor 1
+    400196: doormotorcover
+    400198: doormotorcover 1
+    400200: doormotorcover1
+    400202: doormotorcover1 1
+    400204: doormotorcover2
+    400206: doormotorcover2 1
+    400208: doorrightL
+    400210: doorrightL 1
+    400212: doorrightR
+    400214: doorrightR 1
+    400216: doors
+    400218: doors 1
+    400220: doors_left
+    400222: doors_left 1
+    400224: doors_right
+    400226: doors_right 1
+    400228: egg_spring
+    400230: egg_spring 1
+    400232: egg_spring 2
+    400234: front_ref
+    400236: front_ref 1
+    400238: group4
+    400240: group4 1
+    400242: group6
+    400244: hingelower2
+    400246: hingelower2 1
+    400248: hingelower3
+    400250: hingelower3 1
+    400252: hingelower4
+    400254: hingelower4 1
+    400256: ikHandle1
+    400258: ikHandle1 1
+    400260: ikHandle2
+    400262: ikHandle2 1
+    400264: ikHandle3
+    400266: ikHandle3 1
+    400268: ikHandle4
+    400270: ikHandle4 1
+    400272: ikHandle5
+    400274: ikHandle5 1
+    400276: ikHandle6
+    400278: ikHandle6 1
+    400280: imagePlane10
+    400282: imagePlane10 1
+    400284: imagePlane14
+    400286: imagePlane14 1
+    400288: imagePlane15
+    400290: imagePlane15 1
+    400292: imagePlane16
+    400294: imagePlane16 1
+    400296: imagePlane17
+    400298: imagePlane17 1
+    400300: imagePlane18
+    400302: imagePlane18 1
+    400304: imagePlane19
+    400306: imagePlane19 1
+    400308: imagePlane2
+    400310: imagePlane2 1
+    400312: imagePlane3
+    400314: imagePlane3 1
+    400316: imagePlane4
+    400318: imagePlane4 1
+    400320: imagePlane5
+    400322: imagePlane6
+    400324: imagePlane7
+    400326: imagePlane8
+    400328: imagePlane8 1
+    400330: imagePlane9
+    400332: imagePlane9 1
+    400334: interior
+    400336: interior 1
+    400338: interior 2
+    400340: interior 3
+    400342: interior 4
+    400344: interior_walls
+    400346: joint10
+    400348: joint10 1
+    400350: joint11
+    400352: joint11 1
+    400354: joint13
+    400356: joint13 1
+    400358: joint13 2
+    400360: joint13 3
+    400362: joint13 4
+    400364: joint13 5
+    400366: joint14
+    400368: joint14 1
+    400370: joint14 2
+    400372: joint14 3
+    400374: joint14 4
+    400376: joint14 5
+    400378: joint16
+    400380: joint16 1
+    400382: joint16 2
+    400384: joint16 3
+    400386: joint16 4
+    400388: joint16 5
+    400390: joint18
+    400392: joint18 1
+    400394: joint18 2
+    400396: joint18 3
+    400398: joint18 4
+    400400: joint18 5
+    400402: joint19
+    400404: joint19 1
+    400406: joint19 2
+    400408: joint19 3
+    400410: joint19 4
+    400412: joint19 5
+    400414: joint21
+    400416: joint21 1
+    400418: joint21 2
+    400420: joint21 3
+    400422: joint21 4
+    400424: joint21 5
+    400426: joint7
+    400428: joint7 1
+    400430: joint8
+    400432: joint8 1
+    400434: joint9
+    400436: joint9 1
+    400438: joints
+    400440: junction_box
+    400442: junction_box 1
+    400444: L
+    400446: L 1
+    400448: L 2
+    400450: L 3
+    400452: L 4
+    400454: L 5
+    400456: locator1
+    400458: locator10
+    400460: locator10 1
+    400462: locator11
+    400464: locator11 1
+    400466: locator2
+    400468: locator3
+    400470: locator3 1
+    400472: locator4
+    400474: locator4 1
+    400476: m3pole3
+    400478: m3pole4
+    400480: module_1
+    400482: module_1_interior_interior_walls
+    400484: module_1_interior_interior_walls 1
+    400486: module_2
+    400488: module_2_4_interior_walls
+    400490: module_2_4_interior_walls 1
+    400492: module_2_interior_poles1
+    400494: module_3
+    400496: module_4
+    400498: module_5
+    400500: motor
+    400502: motor 1
+    400504: pantobox
+    400506: pCube54
+    400508: pCube55
+    400510: pCube56
+    400512: pCube93
+    400514: pCube93 1
+    400516: pCube95
+    400518: pCylinder2
+    400520: pCylinder2 1
+    400522: pCylinder3
+    400524: pCylinder3 1
+    400526: poles
+    400528: poles 1
+    400530: poles1
+    400532: poles2
+    400534: poles2 1
+    400536: polySurface20
+    400538: polySurface20 1
+    400540: push_L
+    400542: push_L 1
+    400544: pushpole_L
+    400546: pushpole_L 1
+    400548: pushpole_R
+    400550: pushpole_R 1
+    400552: R
+    400554: R 1
+    400556: R 2
+    400558: R 3
+    400560: R 4
+    400562: R 5
+    400564: roof
+    400566: roof_components
+    400568: roof_components 1
+    400570: roof_skirt1
+    400572: roof_skirt1 1
+    400574: roof_skirt1 2
+    400576: roof_skirt2
+    400578: roof_skirt2 1
+    400580: roof_skirt2 2
+    400582: roof_skirt_1
+    400584: roof_skirt_1 1
+    400586: roof_skirt_2
+    400588: roof_skirt_2 1
+    400590: seatblock10
+    400592: seatblock10 1
+    400594: seatblock11
+    400596: seatblock11 1
+    400598: seatblock12
+    400600: seatblock12 1
+    400602: seatblock13
+    400604: seatblock14
+    400606: seatblock15
+    400608: seatblock16
+    400610: seatblockpair
+    400612: seatblockpair 1
+    400614: seats
+    400616: seats 1
+    400618: seats 2
+    400620: seats 3
+    400622: seats 4
+    400624: seats_facing
+    400626: seats_facing 1
+    400628: seats_facing1
+    400630: seats_facing1 1
+    400632: seats_facing2
+    400634: seats_facing2 1
+    400636: secondary_frame_1
+    400638: secondary_frame_1 1
+    400640: secondary_frame_1 2
+    400642: secondary_frame_2
+    400644: secondary_frame_2 1
+    400646: secondary_frame_2 2
+    400648: secondary_rod_L
+    400650: secondary_rod_L 1
+    400652: secondary_rod_R1
+    400654: secondary_rod_R1 1
+    400656: secondary_rod_R1 2
+    400658: secondary_rod_R1 3
+    400660: secondary_rod_R1 4
+    400662: secondary_rod_R1 5
+    400664: secondary_rod_R1 6
+    400666: secondary_rod_R1 7
+    400668: secondary_rod_R1 8
+    400670: secondary_rod_R1 9
+    400672: secondary_rodL
+    400674: secondary_rodL 1
+    400676: secondary_rodL 2
+    400678: secondary_rodL 3
+    400680: secondary_rodL1
+    400682: secondary_rodL1 1
+    400684: secondary_rodR
+    400686: secondary_rodR 1
+    400688: secondary_rodR 2
+    400690: secondary_rodR 3
+    400692: secondary_rodR1
+    400694: secondary_rodR1 1
+    400696: shell_mod_3
+    400698: sidebumperref
+    400700: sidebumperref 1
+    400702: traction_converter
+    400704: traction_converter 1
+    400706: traction_converter 2
+    400708: traction_converter 3
+    400710: traction_converter_detail
+    400712: traction_converter_detail 1
+    400714: traction_converter_supportstuff
+    400716: traction_converter_supportstuff 1
+    400718: trailer_axles
+    400720: unbraked_axle_motor
+    400722: unbraked_axle_motor 1
+    400724: undercarriageM1
+    400726: undercarriageM1 1
+    400728: undercarriageM3
+    400730: //RootNode
+    2100000: variotram_bogie
+    2100002: running_gear_1
+    2100004: interiorwalls
+    2100006: lambert1
+    2100008: interior_parts_2
+    2100010: module1_5_windows
+    2100012: module1_5
+    2100014: glassplaceholder
+    2100016: variocab_interior
+    2100018: underframe
+    2100020: floors
+    2100022: modules2_4
+    2100024: mod3
+    2300000: air_con 2
+    2300002: air_con 3
+    2300004: air_con_detail
+    2300006: air_con_detail 1
+    2300008: aux_converter 1
+    2300010: aux_converter_detail
+    2300012: batterybox
+    2300014: body_exterior 5
+    2300016: body_exterior 6
+    2300018: body_shell
+    2300020: body_shell 1
+    2300022: bogie_frame_lowpoly1
+    2300024: bogie_frame_lowpoly1 1
+    2300026: bogie_frame_lowpoly2
+    2300028: bogie_skirt_left
+    2300030: bogie_skirt_left 1
+    2300032: bogie_skirt_left 2
+    2300034: bogie_skirt_right
+    2300036: bogie_skirt_right 1
+    2300038: bogie_skirt_right 2
+    2300040: bogies1
+    2300042: bogies_lowpoly
+    2300044: bogies_lowpoly 1
+    2300046: braked_axle_motor
+    2300048: braked_axle_motor 1
+    2300050: brakes
+    2300052: brakes 1
+    2300054: brakes3
+    2300056: brakes4
+    2300058: cab1
+    2300060: cab1 1
+    2300062: cabwall
+    2300064: cabwall 1
+    2300066: columnretainer
+    2300068: columnretainer 1
+    2300070: columnretainer 2
+    2300072: columnretainer 3
+    2300074: columnretainer 4
+    2300076: columnretainer 5
+    2300078: columnretainer 6
+    2300080: columnretainer 7
+    2300082: columnretainer 8
+    2300084: columnretainer 9
+    2300086: columnretainer1
+    2300088: columnretainer1 1
+    2300090: couplercover
+    2300092: couplercover 1
+    2300094: door_rotating_column_L
+    2300096: door_rotating_column_L 1
+    2300098: door_rotating_column_L 2
+    2300100: door_rotating_column_L 3
+    2300102: door_rotating_column_L 4
+    2300104: door_rotating_column_L 5
+    2300106: door_rotating_column_L 6
+    2300108: door_rotating_column_L 7
+    2300110: door_rotating_column_L 8
+    2300112: door_rotating_column_L 9
+    2300114: door_rotating_column_L1
+    2300116: door_rotating_column_L1 1
+    2300118: doordetails_temp_
+    2300120: doordetails_temp_ 1
+    2300122: doordetails_temp_ 2
+    2300124: doordetails_temp_ 3
+    2300126: doordetails_temp_ 4
+    2300128: doordetails_temp_ 5
+    2300130: doordetails_temp_ 6
+    2300132: doordetails_temp_ 7
+    2300134: doordetails_temp_ 8
+    2300136: doordetails_temp_ 9
+    2300138: doordetails_temp_1
+    2300140: doordetails_temp_1 1
+    2300142: doorleft
+    2300144: doorleft 1
+    2300146: doorleft1
+    2300148: doorleft1 1
+    2300150: doorleft3
+    2300152: doorleft3 1
+    2300154: doorleft5
+    2300156: doorleft5 1
+    2300158: doormotor
+    2300160: doormotor 1
+    2300162: doormotorcover
+    2300164: doormotorcover 1
+    2300166: doormotorcover1
+    2300168: doormotorcover1 1
+    2300170: doormotorcover2
+    2300172: doormotorcover2 1
+    2300174: doorrightL
+    2300176: doorrightL 1
+    2300178: doorrightR
+    2300180: doorrightR 1
+    2300182: egg_spring
+    2300184: egg_spring 1
+    2300186: egg_spring 2
+    2300188: hingelower2
+    2300190: hingelower2 1
+    2300192: hingelower3
+    2300194: hingelower3 1
+    2300196: hingelower4
+    2300198: hingelower4 1
+    2300200: interior_walls
+    2300202: junction_box
+    2300204: junction_box 1
+    2300206: m3pole3
+    2300208: m3pole4
+    2300210: module_1_interior_interior_walls
+    2300212: module_1_interior_interior_walls 1
+    2300214: module_2_4_interior_walls
+    2300216: module_2_4_interior_walls 1
+    2300218: module_2_interior_poles1
+    2300220: pantobox
+    2300222: pCube54
+    2300224: pCube55
+    2300226: pCube56
+    2300228: pCube93
+    2300230: pCube93 1
+    2300232: pCube95
+    2300234: pCylinder2
+    2300236: pCylinder2 1
+    2300238: pCylinder3
+    2300240: pCylinder3 1
+    2300242: poles
+    2300244: poles 1
+    2300246: poles1
+    2300248: poles2
+    2300250: poles2 1
+    2300252: polySurface20
+    2300254: polySurface20 1
+    2300256: pushpole_L
+    2300258: pushpole_L 1
+    2300260: pushpole_R
+    2300262: pushpole_R 1
+    2300264: roof_skirt1
+    2300266: roof_skirt1 1
+    2300268: roof_skirt1 2
+    2300270: roof_skirt2
+    2300272: roof_skirt2 1
+    2300274: roof_skirt2 2
+    2300276: roof_skirt_1
+    2300278: roof_skirt_1 1
+    2300280: roof_skirt_2
+    2300282: roof_skirt_2 1
+    2300284: seatblock10
+    2300286: seatblock10 1
+    2300288: seatblock11
+    2300290: seatblock11 1
+    2300292: seatblock12
+    2300294: seatblock12 1
+    2300296: seatblock13
+    2300298: seatblock14
+    2300300: seatblock15
+    2300302: seatblock16
+    2300304: seatblockpair
+    2300306: seatblockpair 1
+    2300308: seats_facing
+    2300310: seats_facing 1
+    2300312: seats_facing1
+    2300314: seats_facing1 1
+    2300316: seats_facing2
+    2300318: seats_facing2 1
+    2300320: secondary_frame_1
+    2300322: secondary_frame_1 1
+    2300324: secondary_frame_1 2
+    2300326: secondary_frame_2
+    2300328: secondary_frame_2 1
+    2300330: secondary_frame_2 2
+    2300332: secondary_rod_L
+    2300334: secondary_rod_L 1
+    2300336: secondary_rod_R1
+    2300338: secondary_rod_R1 1
+    2300340: secondary_rod_R1 2
+    2300342: secondary_rod_R1 3
+    2300344: secondary_rod_R1 4
+    2300346: secondary_rod_R1 5
+    2300348: secondary_rod_R1 6
+    2300350: secondary_rod_R1 7
+    2300352: secondary_rod_R1 8
+    2300354: secondary_rod_R1 9
+    2300356: shell_mod_3
+    2300358: traction_converter 2
+    2300360: traction_converter 3
+    2300362: traction_converter_detail
+    2300364: traction_converter_detail 1
+    2300366: trailer_axles
+    2300368: unbraked_axle_motor
+    2300370: unbraked_axle_motor 1
+    2300372: undercarriageM1
+    2300374: undercarriageM1 1
+    2300376: undercarriageM3
+    3300000: air_con 2
+    3300002: air_con 3
+    3300004: air_con_detail
+    3300006: air_con_detail 1
+    3300008: aux_converter 1
+    3300010: aux_converter_detail
+    3300012: batterybox
+    3300014: body_exterior 5
+    3300016: body_exterior 6
+    3300018: body_shell
+    3300020: body_shell 1
+    3300022: bogie_frame_lowpoly1
+    3300024: bogie_frame_lowpoly1 1
+    3300026: bogie_frame_lowpoly2
+    3300028: bogie_skirt_left
+    3300030: bogie_skirt_left 1
+    3300032: bogie_skirt_left 2
+    3300034: bogie_skirt_right
+    3300036: bogie_skirt_right 1
+    3300038: bogie_skirt_right 2
+    3300040: bogies1
+    3300042: bogies_lowpoly
+    3300044: bogies_lowpoly 1
+    3300046: braked_axle_motor
+    3300048: braked_axle_motor 1
+    3300050: brakes
+    3300052: brakes 1
+    3300054: brakes3
+    3300056: brakes4
+    3300058: cab1
+    3300060: cab1 1
+    3300062: cabwall
+    3300064: cabwall 1
+    3300066: columnretainer
+    3300068: columnretainer 1
+    3300070: columnretainer 2
+    3300072: columnretainer 3
+    3300074: columnretainer 4
+    3300076: columnretainer 5
+    3300078: columnretainer 6
+    3300080: columnretainer 7
+    3300082: columnretainer 8
+    3300084: columnretainer 9
+    3300086: columnretainer1
+    3300088: columnretainer1 1
+    3300090: couplercover
+    3300092: couplercover 1
+    3300094: door_rotating_column_L
+    3300096: door_rotating_column_L 1
+    3300098: door_rotating_column_L 2
+    3300100: door_rotating_column_L 3
+    3300102: door_rotating_column_L 4
+    3300104: door_rotating_column_L 5
+    3300106: door_rotating_column_L 6
+    3300108: door_rotating_column_L 7
+    3300110: door_rotating_column_L 8
+    3300112: door_rotating_column_L 9
+    3300114: door_rotating_column_L1
+    3300116: door_rotating_column_L1 1
+    3300118: doordetails_temp_
+    3300120: doordetails_temp_ 1
+    3300122: doordetails_temp_ 2
+    3300124: doordetails_temp_ 3
+    3300126: doordetails_temp_ 4
+    3300128: doordetails_temp_ 5
+    3300130: doordetails_temp_ 6
+    3300132: doordetails_temp_ 7
+    3300134: doordetails_temp_ 8
+    3300136: doordetails_temp_ 9
+    3300138: doordetails_temp_1
+    3300140: doordetails_temp_1 1
+    3300142: doorleft
+    3300144: doorleft 1
+    3300146: doorleft1
+    3300148: doorleft1 1
+    3300150: doorleft3
+    3300152: doorleft3 1
+    3300154: doorleft5
+    3300156: doorleft5 1
+    3300158: doormotor
+    3300160: doormotor 1
+    3300162: doormotorcover
+    3300164: doormotorcover 1
+    3300166: doormotorcover1
+    3300168: doormotorcover1 1
+    3300170: doormotorcover2
+    3300172: doormotorcover2 1
+    3300174: doorrightL
+    3300176: doorrightL 1
+    3300178: doorrightR
+    3300180: doorrightR 1
+    3300182: egg_spring
+    3300184: egg_spring 1
+    3300186: egg_spring 2
+    3300188: hingelower2
+    3300190: hingelower2 1
+    3300192: hingelower3
+    3300194: hingelower3 1
+    3300196: hingelower4
+    3300198: hingelower4 1
+    3300200: interior_walls
+    3300202: junction_box
+    3300204: junction_box 1
+    3300206: m3pole3
+    3300208: m3pole4
+    3300210: module_1_interior_interior_walls
+    3300212: module_1_interior_interior_walls 1
+    3300214: module_2_4_interior_walls
+    3300216: module_2_4_interior_walls 1
+    3300218: module_2_interior_poles1
+    3300220: pantobox
+    3300222: pCube54
+    3300224: pCube55
+    3300226: pCube56
+    3300228: pCube93
+    3300230: pCube93 1
+    3300232: pCube95
+    3300234: pCylinder2
+    3300236: pCylinder2 1
+    3300238: pCylinder3
+    3300240: pCylinder3 1
+    3300242: poles
+    3300244: poles 1
+    3300246: poles1
+    3300248: poles2
+    3300250: poles2 1
+    3300252: polySurface20
+    3300254: polySurface20 1
+    3300256: pushpole_L
+    3300258: pushpole_L 1
+    3300260: pushpole_R
+    3300262: pushpole_R 1
+    3300264: roof_skirt1
+    3300266: roof_skirt1 1
+    3300268: roof_skirt1 2
+    3300270: roof_skirt2
+    3300272: roof_skirt2 1
+    3300274: roof_skirt2 2
+    3300276: roof_skirt_1
+    3300278: roof_skirt_1 1
+    3300280: roof_skirt_2
+    3300282: roof_skirt_2 1
+    3300284: seatblock10
+    3300286: seatblock10 1
+    3300288: seatblock11
+    3300290: seatblock11 1
+    3300292: seatblock12
+    3300294: seatblock12 1
+    3300296: seatblock13
+    3300298: seatblock14
+    3300300: seatblock15
+    3300302: seatblock16
+    3300304: seatblockpair
+    3300306: seatblockpair 1
+    3300308: seats_facing
+    3300310: seats_facing 1
+    3300312: seats_facing1
+    3300314: seats_facing1 1
+    3300316: seats_facing2
+    3300318: seats_facing2 1
+    3300320: secondary_frame_1
+    3300322: secondary_frame_1 1
+    3300324: secondary_frame_1 2
+    3300326: secondary_frame_2
+    3300328: secondary_frame_2 1
+    3300330: secondary_frame_2 2
+    3300332: secondary_rod_L
+    3300334: secondary_rod_L 1
+    3300336: secondary_rod_R1
+    3300338: secondary_rod_R1 1
+    3300340: secondary_rod_R1 2
+    3300342: secondary_rod_R1 3
+    3300344: secondary_rod_R1 4
+    3300346: secondary_rod_R1 5
+    3300348: secondary_rod_R1 6
+    3300350: secondary_rod_R1 7
+    3300352: secondary_rod_R1 8
+    3300354: secondary_rod_R1 9
+    3300356: shell_mod_3
+    3300358: traction_converter 2
+    3300360: traction_converter 3
+    3300362: traction_converter_detail
+    3300364: traction_converter_detail 1
+    3300366: trailer_axles
+    3300368: unbraked_axle_motor
+    3300370: unbraked_axle_motor 1
+    3300372: undercarriageM1
+    3300374: undercarriageM1 1
+    3300376: undercarriageM3
+    4300000: secondary_frame_1
+    4300002: secondary_frame_2
+    4300004: bogie_frame_lowpoly1
+    4300006: braked_axle_motor
+    4300008: unbraked_axle_motor
+    4300010: egg_spring
+    4300012: brakes
+    4300014: bogies_lowpoly
+    4300016: hingelower4
+    4300018: secondary_rod_R1
+    4300020: doordetails_temp_
+    4300022: doorleft
+    4300024: door_rotating_column_L
+    4300026: columnretainer
+    4300028: doordetails_temp_
+    4300030: doorleft1
+    4300032: columnretainer
+    4300034: door_rotating_column_L
+    4300036: secondary_rod_R1
+    4300038: couplercover
+    4300040: junction_box
+    4300042: traction_converter
+    4300044: traction_converter_detail
+    4300046: roof_skirt1
+    4300048: roof_skirt2
+    4300050: bogie_skirt_left
+    4300052: bogie_skirt_right
+    4300054: body_exterior
+    4300056: cab1
+    4300058: pCube93
+    4300060: undercarriageM1
+    4300062: poles
+    4300064: module_1_interior_interior_walls
+    4300066: seatblock10
+    4300068: seatblock11
+    4300070: seatblock12
+    4300072: seatblockpair
+    4300074: doormotorcover2
+    4300076: cabwall
+    4300078: air_con_detail
+    4300080: air_con
+    4300082: secondary_rod_R1
+    4300084: secondary_rod_R1
+    4300086: doordetails_temp_
+    4300088: doorleft3
+    4300090: door_rotating_column_L
+    4300092: columnretainer
+    4300094: doordetails_temp_
+    4300096: doorleft5
+    4300098: columnretainer
+    4300100: door_rotating_column_L
+    4300102: doormotor
+    4300104: pushpole_R
+    4300106: pushpole_L
+    4300108: hingelower2
+    4300110: hingelower3
+    4300112: secondary_rod_R1
+    4300114: secondary_rod_L
+    4300116: doordetails_temp_
+    4300118: doorrightL
+    4300120: door_rotating_column_L
+    4300122: columnretainer
+    4300124: doorrightR
+    4300126: doordetails_temp_1
+    4300128: door_rotating_column_L1
+    4300130: columnretainer1
+    4300132: roof_skirt_2
+    4300134: roof_skirt_1
+    4300136: body_shell
+    4300138: seats_facing2
+    4300140: seats_facing1
+    4300142: seats_facing
+    4300144: poles2
+    4300146: doormotorcover
+    4300148: doormotorcover1
+    4300150: module_2_4_interior_walls
+    4300152: polySurface20
+    4300154: module_2_interior_poles1
+    4300156: pCylinder2
+    4300158: pCylinder3
+    4300160: bogies1
+    4300162: roof_skirt1
+    4300164: roof_skirt2
+    4300166: bogie_skirt_left
+    4300168: bogie_skirt_right
+    4300170: shell_mod_3
+    4300172: undercarriageM3
+    4300174: m3pole3
+    4300176: m3pole4
+    4300178: interior_walls
+    4300180: seatblock13
+    4300182: seatblock14
+    4300184: seatblock15
+    4300186: seatblock16
+    4300188: secondary_frame_1
+    4300190: secondary_frame_2
+    4300192: egg_spring
+    4300194: trailer_axles
+    4300196: brakes3
+    4300198: bogie_frame_lowpoly2
+    4300200: pantobox
+    4300202: batterybox
+    4300204: aux_converter
+    4300206: aux_converter_detail
+    4300208: secondary_frame_1
+    4300210: secondary_frame_2
+    4300212: bogie_frame_lowpoly1
+    4300214: braked_axle_motor
+    4300216: unbraked_axle_motor
+    4300218: egg_spring
+    4300220: brakes
+    4300222: brakes4
+    4300224: bogies_lowpoly
+    4300226: hingelower4
+    4300228: secondary_rod_R1
+    4300230: doordetails_temp_
+    4300232: doorleft
+    4300234: door_rotating_column_L
+    4300236: columnretainer
+    4300238: doordetails_temp_
+    4300240: doorleft1
+    4300242: columnretainer
+    4300244: door_rotating_column_L
+    4300246: secondary_rod_R1
+    4300248: couplercover
+    4300250: junction_box
+    4300252: traction_converter
+    4300254: traction_converter_detail
+    4300256: roof_skirt1
+    4300258: roof_skirt2
+    4300260: bogie_skirt_left
+    4300262: bogie_skirt_right
+    4300264: body_exterior
+    4300266: cab1
+    4300268: pCube93
+    4300270: undercarriageM1
+    4300272: poles
+    4300274: module_1_interior_interior_walls
+    4300276: seatblock10
+    4300278: seatblock11
+    4300280: seatblock12
+    4300282: seatblockpair
+    4300284: doormotorcover2
+    4300286: cabwall
+    4300288: air_con_detail
+    4300290: air_con
+    4300292: secondary_rod_R1
+    4300294: secondary_rod_R1
+    4300296: doordetails_temp_
+    4300298: doorleft3
+    4300300: door_rotating_column_L
+    4300302: columnretainer
+    4300304: doordetails_temp_
+    4300306: doorleft5
+    4300308: columnretainer
+    4300310: door_rotating_column_L
+    4300312: doormotor
+    4300314: pushpole_R
+    4300316: pushpole_L
+    4300318: hingelower2
+    4300320: hingelower3
+    4300322: secondary_rod_R1
+    4300324: secondary_rod_L
+    4300326: doordetails_temp_
+    4300328: doorrightL
+    4300330: door_rotating_column_L
+    4300332: columnretainer
+    4300334: doorrightR
+    4300336: doordetails_temp_1
+    4300338: door_rotating_column_L1
+    4300340: columnretainer1
+    4300342: roof_skirt_2
+    4300344: roof_skirt_1
+    4300346: body_shell
+    4300348: poles1
+    4300350: poles2
+    4300352: doormotorcover
+    4300354: doormotorcover1
+    4300356: module_2_4_interior_walls
+    4300358: polySurface20
+    4300360: pCylinder2
+    4300362: pCylinder3
+    4300364: seats_facing2
+    4300366: seats_facing1
+    4300368: seats_facing
+    4300370: pCube95
+    4300372: pCube54
+    4300374: pCube55
+    4300376: pCube56
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
