@@ -223,25 +223,30 @@ MonoBehaviour:
   gravity: 20
   hpSlider: {fileID: 0}
   hpFill: {fileID: 0}
-  maxHP: 100
+  maxHP: 40
   curHP: 0
   canLook: 0
   axis: 1
-  sensitivity: 10
+  sensitivity: 5
   minY: -60
   maxY: 60
   mainCamera: {fileID: 5790636513308597513}
-  isHolding: 1
+  isHolding: 0
   playerReach: 1
   totalItem: {fileID: 0}
   holdingItem: {fileID: 0}
-  voteTotal: 3
+  voteTotal: 0
   gun2: {fileID: 0}
   lastResort: 0
   pShoot: {fileID: 1914552140129144435}
   menus: {fileID: 0}
   enemy: {fileID: 0}
-  spawn: {fileID: 0}
+  spawn:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1914552140129144435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -371,6 +376,7 @@ GameObject:
   - component: {fileID: 4858176322359556817}
   - component: {fileID: 6597922494965395346}
   - component: {fileID: 6458395479200735087}
+  - component: {fileID: 1576857532}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -403,7 +409,7 @@ Camera:
   m_GameObject: {fileID: 5790636513308597513}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.6698113, g: 0.53395337, b: 0.5538514, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
@@ -461,6 +467,19 @@ MonoBehaviour:
   sensitivity: 5
   minY: -60
   maxY: 60
+--- !u!114 &1576857532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5790636513308597513}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5c86ff4e4edaff4ab7bf19cf6a2fe8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectMaterial: {fileID: 2100000, guid: 9c2faf3186a4f0c4babbeffafb68cdb0, type: 2}
 --- !u!1 &7775054247170594719
 GameObject:
   m_ObjectHideFlags: 0
