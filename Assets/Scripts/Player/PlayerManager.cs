@@ -41,6 +41,8 @@ public class PlayerManager : MonoBehaviour
     public EnemyManager enemy;
     public SpawnerScript[] spawn;
 
+    public GameObject winState;
+
     #endregion
 
     #region Start
@@ -143,7 +145,7 @@ public class PlayerManager : MonoBehaviour
             totalItem.text = voteTotal.ToString() + " votes!";
         }
 
-        if (voteTotal >= 4)
+        if (voteTotal == 4)
         {
             holdingItem.text = "Oh no the Liberals are mad! Defend the trams!";
             lastResort = true;
@@ -152,45 +154,24 @@ public class PlayerManager : MonoBehaviour
             spawn[2].activateBoss = true;
             spawn[3].spawnRate = 2;
             spawn[4].activateBoss = true;
+            Interact();
+            if (voteTotal == 1)
+            {
+                totalItem.text = voteTotal.ToString() + " fragments!";
+            }
+            else
+            {
+                totalItem.text = voteTotal.ToString() + " fragments!";
+            }
+        }
+        else if (voteTotal >= 7)
+        {
+            winState.SetActive(true);
+            menus.WinGame();
         }
         else
         {
-            if (Input.GetButtonDown("Interact"))
-            {
-                Ray interact;
-                interact = Camera.main.ScreenPointToRay(new Vector2(Screen.width / 2, Screen.height / 2));
-                RaycastHit hitInfo;
-                if (Physics.Raycast(interact, out hitInfo, playerReach))
-                {
-                    if (hitInfo.collider.CompareTag("Collectable"))
-                    {
-                        if (isHolding == false)
-                        {
-                            isHolding = true;
-                            Destroy(hitInfo.collider.gameObject);
-                            holdingItem.text = "Holding a Vote! Go submit it to the ballot box!";
-                        }
-                        else
-                        {
-                            holdingItem.text = "Hurry! Go submit the vote to the ballot box!";
-                        }
-                    }
-
-                    if (hitInfo.collider.CompareTag("Depositor"))
-                    {
-                        if (isHolding == true)
-                        {
-                            isHolding = false;
-                            holdingItem.text = "Vote submitted! Go collect another vote!";
-                            voteTotal++;
-                        }
-                        else
-                        {
-                            holdingItem.text = "Quick! Go collect a vote!";
-                        }
-                    }
-                }
-            }
+            Interact();
         }
 
         //Pause
@@ -210,6 +191,52 @@ public class PlayerManager : MonoBehaviour
         }
     }
     #endregion
+
+    public void Interact()
+    {
+        if (Input.GetButtonDown("Interact"))
+        {
+            Ray interact;
+            interact = Camera.main.ScreenPointToRay(new Vector2(Screen.width / 2, Screen.height / 2));
+            RaycastHit hitInfo;
+            if (Physics.Raycast(interact, out hitInfo, playerReach))
+            {
+                if (hitInfo.collider.CompareTag("Collectable"))
+                {
+                    if (isHolding == false)
+                    {
+                        isHolding = true;
+                        Destroy(hitInfo.collider.gameObject);
+                        holdingItem.text = "Holding a Vote! Go submit it to the ballot box!";
+                    }
+                    else
+                    {
+                        holdingItem.text = "Hurry! Go submit the vote to the ballot box!";
+                    }
+                }
+
+                if (hitInfo.collider.CompareTag("Depositor"))
+                {
+                    if (isHolding == true)
+                    {
+                        isHolding = false;
+                        holdingItem.text = "Vote submitted! Go collect another vote!";
+                        voteTotal++;
+                    }
+                    else
+                    {
+                        holdingItem.text = "Quick! Go collect a vote!";
+                    }
+                }
+
+                if (hitInfo.collider.CompareTag("Fragment"))
+                {
+                    voteTotal++;
+                    Destroy(hitInfo.collider.gameObject);
+                }
+            }
+        }
+    }
 }
 
 public enum RotationalAxis

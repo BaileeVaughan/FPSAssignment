@@ -21,7 +21,6 @@ public class Menus : MonoBehaviour
         pauseScreen.SetActive(false);
         playerUI.SetActive(false);
         deathUI.SetActive(false);
-        isFullscreen = false;
         Cursor.lockState = CursorLockMode.Confined;
     }
 
@@ -80,6 +79,19 @@ public class Menus : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public void WinGame()
+    {
+        PauseGame();
+        Cursor.visible = true;
+        playerManager.canLook = false;
+        mouseLook.canLook = false;
+        playerShoot.canShoot = false;
+        pauseScreen.SetActive(false);
+        playerUI.SetActive(false);
+        deathUI.SetActive(false);
+        Cursor.lockState = CursorLockMode.Confined;
+    }
+
     #region Options
     public bool isFullscreen;
     public PlayerManager player;
@@ -88,11 +100,6 @@ public class Menus : MonoBehaviour
     {
         Screen.fullScreen = !isFullscreen;
         Debug.Log("Fullscreen Toggled");
-    }
-
-    public void SetMasterVolume(float value)
-    {
-        //AudioManager.instance.SetVolume(value, AudioManager.AudioChannel.Master);
     }
     #endregion
 }

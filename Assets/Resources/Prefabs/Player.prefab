@@ -227,17 +227,17 @@ MonoBehaviour:
   curHP: 0
   canLook: 0
   axis: 1
-  sensitivity: 5
+  sensitivity: 2.5
   minY: -60
   maxY: 60
   mainCamera: {fileID: 5790636513308597513}
-  isHolding: 0
+  isHolding: 1
   playerReach: 1
   totalItem: {fileID: 0}
   holdingItem: {fileID: 0}
-  voteTotal: 0
+  voteTotal: 3
   gun2: {fileID: 0}
-  lastResort: 0
+  lastResort: 1
   pShoot: {fileID: 1914552140129144435}
   menus: {fileID: 0}
   enemy: {fileID: 0}
@@ -247,6 +247,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  winState: {fileID: 0}
 --- !u!114 &1914552140129144435
 MonoBehaviour:
   m_ObjectHideFlags: 0

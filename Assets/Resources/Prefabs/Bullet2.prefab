@@ -121,7 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 2419283880351768508}
   speed: 7000
-  damage: 5
+  damage: 10
 --- !u!54 &2419283880351768508
 Rigidbody:
   m_ObjectHideFlags: 0

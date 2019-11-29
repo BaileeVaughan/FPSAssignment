@@ -20,6 +20,8 @@ public class EnemyManager : MonoBehaviour
     public float maxHP = 10f;
     public float curHP = 0f;
 
+    public GameObject deathDrop;
+
     private void Start()
     {
         //Health
@@ -55,6 +57,11 @@ public class EnemyManager : MonoBehaviour
             Destroy(gameObject);
         }
 
+        if (isBoss && curHP <= 0)
+        {
+            Instantiate(deathDrop).AddComponent<Rigidbody>().useGravity = true;
+            deathDrop.transform.position = GameObject.FindGameObjectWithTag("DropLocation").transform.position;
+        }
 
     }
 }

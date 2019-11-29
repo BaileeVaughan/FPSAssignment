@@ -389,6 +389,8 @@ MonoBehaviour:
   hpFill: {fileID: 8549016215924379434}
   maxHP: 10
   curHP: 0
+  deathDrop: {fileID: 0}
+  deathDropLocation: {fileID: 0}
 --- !u!195 &1139128178
 NavMeshAgent:
   m_ObjectHideFlags: 0
